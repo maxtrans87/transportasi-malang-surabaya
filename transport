@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Trans - Sewa Mobil dan Wisata di Malang</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Max Trans</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Selamat Datang di Max Trans</h1>
+            <p>Jasa sewa mobil dan pelayanan wisata terbaik di Malang. Nikmati perjalanan nyaman dan aman bersama kami.</p>
+            <a href="#services" class="btn">Lihat Layanan</a>
+        </div>
+        <img src="https://via.placeholder.com/600x400?text=Mobil+Wisata+Malang" alt="Mobil Wisata Malang" class="hero-image">
+    </section>
+
+    <section id="about" class="about">
+        <h2>Tentang Kami</h2>
+        <p>Max Trans adalah penyedia layanan transportasi terpercaya di Malang, menawarkan sewa mobil berkualitas tinggi dan paket wisata yang menarik. Kami berkomitmen untuk memberikan pengalaman terbaik bagi pelanggan dengan armada mobil yang terawat dan driver profesional.</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Layanan Kami</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <img src="https://via.placeholder.com/300x200?text=Sewa+Mobil" alt="Sewa Mobil">
+                <h3>Sewa Mobil</h3>
+                <p>Sewa mobil harian atau bulanan dengan berbagai pilihan kendaraan, dari city car hingga SUV. Cocok untuk perjalanan bisnis atau liburan.</p>
+            </div>
+            <div class="service-item">
+                <img src="https://via.placeholder.com/300x200?text=Wisata+Malang" alt="Wisata Malang">
+                <h3>Jasa Wisata</h3>
+                <p>Paket wisata ke destinasi populer Malang seperti Gunung Bromo, Pantai Balekambang, dan Jawa Timur lainnya. Termasuk transportasi, akomodasi, dan guide.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Hubungi Kami</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Nama Anda" required>
+            <input type="email" name="email" placeholder="Email Anda" required>
+            <textarea name="message" placeholder="Pesan Anda" required></textarea>
+            <button type="submit" class="btn">Kirim</button>
+        </form>
+        <div class="contact-info">
+            <p>Alamat: Jl. Contoh No. 123, Malang, Jawa Timur</p>
+            <p>Telepon: +62 812-3456-7890</p>
+            <p>Email: info@maxtrans.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Max Trans. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+/* Reset dan font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header dan Nav */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin-left: 2rem;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #3498db;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 3px 0;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 1rem 2rem;
+    background: linear-gradient(to right, #3498db, #2c3e50);
+    color: white;
+    text-align: center;
+}
+.hero-content {
+    max-width: 600px;
+}
+.hero-image {
+    max-width: 100%;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+.btn {
+    background: #e74c3c;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.btn:hover {
+    background: #c0392b;
+}
+
+/* Sections */
+section {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+/* About */
+.about p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Services */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.service-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.service-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Contact */
+.contact {
+    background: #ecf0f1;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.contact-info {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #2c3e50;
+        width: 100%;
+        padding: 1rem;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .hero {
+        padding-top: 4rem;
+    }
+}
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
